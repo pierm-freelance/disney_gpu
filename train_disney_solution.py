@@ -101,7 +101,7 @@ if __name__=="__main__":
         # Log model seperately to have more flexibility on setup 
         mlflow.keras.log_model(
             keras_model=model,
-            artifact_path="Sentiment_detector",
+            artifact_path="Disneyland_review_detector",
             registered_model_name="Sentiment_detector_RNN",
             signature=infer_signature(french_reviews, predictions)
         )
